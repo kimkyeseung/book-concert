@@ -13,8 +13,8 @@ export default function Home() {
       {/* Background decoration - only visible on xl screens */}
       <FloatingShapes />
 
-      <main className="min-h-screen bg-[#0D0D0D] flex flex-col items-center relative z-10">
-        <div className="w-full max-w-[1200px] shadow-2xl">
+      <main className="w-full min-h-screen flex flex-col items-center relative">
+        <div className="w-full max-w-[1200px] shadow-2xl bg-[#0D0D0D] relative z-10">
           {/* Hero Section */}
           <section
             className="relative w-full px-6 md:px-16 py-16 md:py-24 flex flex-col items-center"
