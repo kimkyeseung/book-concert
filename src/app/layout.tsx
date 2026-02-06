@@ -9,8 +9,22 @@ const blackHanSans = Black_Han_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "https://book-concert.vercel.app"
+  ),
   title: "위풍당당 이진숙입니다 | 북콘서트 & 출판기념회",
   description: "이라크전 종군기자에서 자유의 최전선까지 - 이진숙 북콘서트 & 출판기념회 초대장",
+  openGraph: {
+    title: "위풍당당 이진숙입니다",
+    description: "이라크전 종군기자에서 자유의 최전선까지 - 북콘서트 & 출판기념회 초대장",
+    type: "website",
+    locale: "ko_KR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "위풍당당 이진숙입니다",
+    description: "이라크전 종군기자에서 자유의 최전선까지 - 북콘서트 & 출판기념회 초대장",
+  },
 };
 
 export default function RootLayout({
