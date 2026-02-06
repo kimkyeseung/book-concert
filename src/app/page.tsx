@@ -41,15 +41,25 @@ export default function Home() {
 
               {/* Right: Title & Info */}
               <div className="flex-1 flex flex-col items-center md:items-start gap-5">
-                {/* Badge */}
-                <div className="flex items-center gap-2 bg-[#C9A962] px-6 py-2.5 rounded-sm">
-                  <span className="text-[#0D0D0D] text-sm font-semibold tracking-wide">
-                    북콘서트 &amp; 출판기념회
+                {/* Invitation Label */}
+                <span className="text-[11px] md:text-[12px] text-[#C9A962] tracking-[6px] uppercase">
+                  Invitation
+                </span>
+
+                {/* Badge with invitation */}
+                <div className="flex flex-col items-center md:items-end gap-2">
+                  <div className="flex items-center gap-3 bg-[#C9A962] px-8 py-3 rounded-sm">
+                    <span className="text-[#0D0D0D] text-base md:text-lg font-bold tracking-wide">
+                      북콘서트 &amp; 출판기념회
+                    </span>
+                  </div>
+                  <span className="text-[#F5F4F2]/70 text-sm md:text-base tracking-wide">
+                    당신을 초대합니다
                   </span>
                 </div>
 
                 {/* Gold Line */}
-                <div className="w-[100px] h-[3px] bg-[#C9A962]" />
+                <div className="w-[100px] h-[3px] bg-[#C9A962] md:self-start" />
 
                 {/* Title */}
                 <h1 className="text-[56px] md:text-[80px] font-bold text-[#F5F4F2] tracking-[8px] leading-none font-[family-name:var(--font-black-han-sans)]">
@@ -160,7 +170,7 @@ export default function Home() {
                 <div className="h-[6px] bg-[#0D0D0D]" />
                 <div className="flex-1 p-6 flex flex-col gap-3">
                   <span className="text-[12px] text-[#0D0D0D] tracking-[4px] font-medium">부산</span>
-                  <span className="text-[28px] text-[#0D0D0D] tracking-wide font-[Pretendard]">
+                  <span className="text-[24px] text-[#0D0D0D] tracking-tight font-bold font-[Pretendard]">
                     2월 7일 (금) 오후 2시
                   </span>
                   <span className="text-[14px] text-[#0D0D0D]/80 italic">
@@ -187,7 +197,7 @@ export default function Home() {
                 <div className="h-1 bg-[#C9A962]" />
                 <div className="flex-1 p-6 flex flex-col gap-3">
                   <span className="text-[12px] text-[#C9A962] tracking-[4px] font-medium">광주</span>
-                  <span className="text-[26px] text-[#F5F4F2] tracking-wide font-[Pretendard]">
+                  <span className="text-[22px] text-[#F5F4F2] tracking-tight font-bold font-[Pretendard]">
                     2월 8일 (토) 오후 3시 30분
                   </span>
                   <span className="text-[14px] text-[#8A8A8A] italic">
@@ -210,7 +220,7 @@ export default function Home() {
                 <div className="h-1 bg-[#8A8A8A]" />
                 <div className="flex-1 p-6 flex flex-col gap-3">
                   <span className="text-[12px] text-[#8A8A8A] tracking-[4px] font-medium">대구</span>
-                  <span className="text-[26px] text-[#F5F4F2] tracking-wide font-[Pretendard]">
+                  <span className="text-[22px] text-[#F5F4F2] tracking-tight font-bold font-[Pretendard]">
                     2월 9일 (일) 오후 6시 30분
                   </span>
                   <span className="text-[14px] text-[#8A8A8A] italic">
