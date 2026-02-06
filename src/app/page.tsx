@@ -106,8 +106,18 @@ export default function Home() {
           </section>
 
           {/* Book & Quote Section */}
-          <section className="w-full bg-[#0D0D0D] py-16 px-6 md:px-16">
-            <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-12">
+          <section className="w-full py-16 px-6 md:px-16 relative overflow-hidden">
+            {/* Background image - war ruins */}
+            <div
+              className="absolute inset-0 bg-cover bg-center grayscale"
+              style={{
+                backgroundImage: "url('/images/war-ruins.jpg')",
+                opacity: 0.5,
+              }}
+            />
+            <div className="absolute inset-0 bg-[#0D0D0D]/85" />
+
+            <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
               {/* Book Image */}
               <div className="relative w-[200px] md:w-[280px] h-[290px] md:h-[400px] rotate-3 shadow-[8px_12px_32px_rgba(0,0,0,0.5)]">
                 <Image
@@ -121,7 +131,7 @@ export default function Home() {
               {/* Quote Box */}
               <div className="flex-1 bg-[#1A1A1A] border border-[#C9A962] p-8 md:p-10 flex flex-col items-center gap-5">
                 <Quote className="w-8 h-8 text-[#C9A962]" />
-                <p className="text-[22px] md:text-[28px] font-medium text-[#F5F4F2] text-center leading-relaxed font-[Pretendard]">
+                <p className="text-[24px] md:text-[32px] font-bold text-[#F5F4F2] text-center leading-snug font-[Pretendard]">
                   행동하지 않으면<br />세상은 바뀌지 않는다!
                 </p>
                 <div className="w-12 h-[2px] bg-[#C9A962]" />
